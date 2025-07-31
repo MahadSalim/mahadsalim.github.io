@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+
+html {
+    height: 100%;
+    width: 100%
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* landingPage Wrapper */
+.landingPageTextWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* landingPage Header text */
+#landingPageMainText {
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 4em;
+    color: violet;
+    text-align: center;
+}
