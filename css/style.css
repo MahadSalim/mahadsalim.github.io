@@ -12,19 +12,53 @@ body{
 }
 
 /* landingPage Wrapper */
-.landingPageTextWrapper {
+.landingPageWrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: black;
+    line-height: 0%;
+
+    position: relative;
 }
 
 /* landingPage Header text */
-#landingPageMainText {
+#landingPageH1 {
     font-family: Inter;
     font-weight: 900;
-    font-size: 4em;
-    color: violet;
+    font-size: 80px;
+    color: whitesmoke;
     text-align: center;
+
+    position: absolute;
+    top: 260px;
+    z-index: 1;
+}
+
+#landingPageH2 {
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 200px;
+    color: whitesmoke;
+    text-align: center;
+    opacity: 7%;
+
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+}
+
+#landingPageH3 {
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 18.5px;
+    color: whitesmoke;
+    text-align: center;
+
+    position: absolute;
+    top: 350px;
+    z-index: 1;
 }
