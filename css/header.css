@@ -1,0 +1,41 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Padding */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+.headerWrapperLeft {
+    padding-top: .25%;
+}
+
+.headerWrapperRight{
+    /* Space between buttons */
+    display: flex;
+    gap: 50px;
+}
+
+.headerLogoImg {
+    width: 200px;
+    height: auto;
+
+}
+
+#headerAbout {
+    font-weight: 800;
+    font-size: 20px;    
+}
+
+#headerProjects {
+    font-weight: 800;
+    font-size: 20px; 
+}
+
+#headerResume {
+    font-weight: 800;
+    font-size: 20px;
+}
