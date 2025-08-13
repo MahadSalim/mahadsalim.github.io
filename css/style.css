@@ -1,31 +1,17 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
-
-html {
-    height: 100%;
-    width: 100%
+html{
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    /* reset default browser styles */
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-
-    /* prevent scrolling overflow */
-    overflow: hidden;
-
-    /* default bg color */
-    background-color: black;
-
-    /* default font family */
-    font-family: Inter;
-
-    /* default font color */
-    color: whitesmoke;   
 }
 
 /* default button properties */
 .button{
-    background-color: black;
-    border: none;
-    color: whitesmoke;
+    
 }
+
