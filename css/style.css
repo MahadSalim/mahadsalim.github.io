@@ -29,25 +29,25 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-.mobiusIconLanding{
+#mobiusIconLanding{
     height: 120%;
     width: auto;
     
 }
 
-.mobiusIconAbout{
+#mobiusIconAbout{
     height: 120%;
     width: auto;
     
 }
 
-.mobiusIconWork{
+#mobiusIconWork{
     height: 120%;
     width: auto;
     
 }
 
-.mobiusIconContact{
+#mobiusIconContact{
     height: 120%;
     width: auto;
     

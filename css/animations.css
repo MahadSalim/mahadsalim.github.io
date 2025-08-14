@@ -3,4 +3,7 @@
     transform: rotate(360deg);
 }
 
-
+.mobius-spin-reverse {
+    transition: transform 2s;
+    transform: rotate(-360deg);
+}

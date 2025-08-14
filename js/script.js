@@ -1,23 +1,34 @@
 const sections = document.querySelectorAll('section');
 const icons = document.querySelectorAll('.mobiusIconContainer img');
+let lastActiveIndex = 0; // Start with the first section
 
-const observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Get the ID of the intersecting section
             const sectionId = entry.target.id;
-
-            // Find the corresponding icon for this section
             const icon = document.querySelector(`#${sectionId} .mobiusIconContainer img`);
 
-            // Remove spin from all icons and add to the current one
-            icons.forEach(i => i.classList.remove('mobius-spin'));
+            const currentSectionIndex = parseInt(entry.target.dataset.index);
+
+            // Determine scroll direction by comparing indices
+            const isScrollingDown = currentSectionIndex > lastActiveIndex;
+
+            icons.forEach(i => {
+                i.classList.remove('mobius-spin', 'mobius-spin-reverse');
+            });
+
             if (icon) {
-                icon.classList.add('mobius-spin');
+                if (isScrollingDown) {
+                    icon.classList.add('mobius-spin');
+                } else {
+                    icon.classList.add('mobius-spin-reverse');
+                }
             }
+
+            lastActiveIndex = currentSectionIndex;
         }
     });
-}, { threshold: 0.5 }); // Adjust the threshold to trigger when the section is halfway visible
+}, { threshold: 0.5 });
 
 sections.forEach(section => {
     observer.observe(section);
