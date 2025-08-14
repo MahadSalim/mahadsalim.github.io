@@ -1,0 +1,6 @@
+.mobius-spin {
+    transition: transform 2s ;
+    transform: rotate(360deg);
+}
+
+

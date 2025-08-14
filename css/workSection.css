@@ -12,24 +12,12 @@
     box-sizing: border-box;
 
     border: 2px dashed black;
-}
 
-/*  */
+    scroll-snap-align: start;
 
-#mobiusIconWorkContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    scroll-snap-align: start;
 
-    position: absolute;
 
-    height: 100%;
-    width: auto;
-}
-
-#mobiusIconWork{
-    height: 120%;
-    width: auto;
 }
 
 /*  */
@@ -97,38 +85,63 @@
 
 /*  */
 
-#workSectionParaContainer{
+#workSectionParaContainer {
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     margin-top: 0vh;
     margin-left: 62vw;
     max-width: 31vw;
     min-width: 31vw;
-    min-height: 55vh;
+    min-height: 43vh;
     max-height: 55vh;
+
     justify-content: center;
-    align-items: center;
+    align-items: middle;
 
     gap: 0;
 
     border: 1px solid #5A5A5A;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#workSectionPara{
-    text-align: center;
-    font-family: victorMono;
-    font-weight: 400;
-    font-size: 1.4vw;
-    color: #5A5A5A;
+.work-entry {
+    display: flex;
+    justify-content: space-between;  
+    align-items: baseline;           
+    width: 100%;
+    margin-left: 1px;
 }
 
-#workSectionPara:not(:last-child) {
-    margin-bottom: 1vh;
+.work-entry:not(:last-child) {
+    padding-bottom: 2rem;
+}
+
+.job-title {
+    font-family: victorMono;
+    font-weight: 400;
+    font-size: 1.35vw;
+    color: #5A5A5A;
+    margin: 0;
+}
+
+.company-name {
+    font-family: victorMono;
+    font-weight: 300;
+    font-size: 1.15vw;
+    color: #5A5A5A;
+    margin: 0;
+}
+
+.job-dates {    
+    font-family: victorMono;
+    font-weight: 200;
+    font-size: 0.9vw;
+    color: #5A5A5A;
+    margin: 0;
 }
 
 /*  */

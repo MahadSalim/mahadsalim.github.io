@@ -12,24 +12,9 @@
     box-sizing: border-box;
 
     border: 2px dashed black;
-}
 
-/*  */
+    scroll-snap-align: start;
 
-#mobiusIconAboutContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    
-    height: 100%;
-    width: 100%;
-}
-
-#mobiusIconAbout{
-    height: 120%;
-    width: auto;
 }
 
 /*  */
@@ -100,7 +85,7 @@
 #aboutSectionParaContainer{
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     margin-top: 0vh;
     margin-left: 62vw;
     max-width: 31vw;
@@ -114,8 +99,8 @@
     gap: 0;
 
     border: 1px solid #5A5A5A;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }

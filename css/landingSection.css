@@ -12,28 +12,8 @@
     box-sizing: border-box;
 
     border: 2px dashed black;
-}
 
-/*  */
-
-#mobiusIconLandingContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    /* top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%); */
-
-    height: 100%;
-    width: 100%;
-}
-
-#mobiusIconLanding{
-    height: 120%;
-    width: auto;
+    scroll-snap-align: start;
 }
 
 /*  */

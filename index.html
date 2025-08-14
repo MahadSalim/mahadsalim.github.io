@@ -8,6 +8,7 @@
         <link rel = "stylesheet" href ="css/aboutSection.css">
         <link rel = "stylesheet" href ="css/workSection.css">
         <link rel = "stylesheet" href ="css/contactSection.css">
+        <link rel = "stylesheet" href ="css/animations.css">
     </head>
     <body>
         <section id="landingSection">
@@ -24,8 +25,8 @@
                 <a href="#work">WORK</a>
                 <a href="#contact">CONTACT</a>
             </div>
-            <div id="mobiusIconLandingContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconLanding">
+            <div class="mobiusIconContainer">
+                <img src="library/mobiusIcon.svg" class="mobiusIconLanding">
             </div>
         </section>
 
@@ -61,8 +62,8 @@
                 <a href="#work">WORK</a>
                 <a href="#contact">CONTACT</a>
             </div>
-            <div id="mobiusIconAboutContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconAbout">
+            <div class="mobiusIconContainer">
+                <img src="library/mobiusIcon.svg" class="mobiusIconAbout">
             </div>
         </section>
 
@@ -73,20 +74,45 @@
                 </h1>
             </div>
             <div id="workSectionSubTitleContainer">
-                    <h2 id="aboutSectionSubTitle">
+                    <h2 id="workSectionSubTitle">
                         
                     </h2>
             </div>
             <div id="workSectionParaContainer">
-                <p id="workSectionPara">
-                    
-                </p>
+                <div class="work-entry">
+                    <div>
+                        <p class="job-title">Machine Learning Engineer</p>
+                        <p class="company-name">Cliffton Technical Services</p>
+                    </div>
+                    <p class="job-dates">2024 - 2025</p>
+                </div>
+                <div class="work-entry">
+                    <div>
+                        <p class="job-title">C++ Developer</p>
+                        <p class="company-name">7G-Fuse</p>
+                    </div>
+                    <p class="job-dates">2023 - 2024</p>
+                </div>
+                <div class="work-entry">
+                    <div>
+                        <p class="job-title">Full Stack Developer Intern</p>
+                        <p class="company-name">University of Nottingham</p>
+                    </div>
+                    <p class="job-dates">2023 - 2023</p>
+                </div>
+                <div class="work-entry">
+                    <div>
+                        <p class="job-title">Internship Trainee</p>
+                        <p class="company-name">Mesinkira.io</p>
+                    </div>
+                    <p class="job-dates">2022 - 2022</p>
+                </div>
             </div>
             <div id="workSectionNavBarContainer">
                 <a href="#contact">CONTACT</a>
             </div>
-            <div id="mobiusIconWorkContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconWork">
+            <div class="mobiusIconContainer">
+                <img src="library/mobiusIcon.svg" class="mobiusIconWork">
             </div>
         </section>
 
@@ -97,7 +123,7 @@
                 </h1>
             </div>
             <div id="contactSectionSubTitleContainer">
-                    <h2 id="aboutSectionSubTitle">
+                    <h2 id="contactSectionSubTitle">
                         
                     </h2>
             </div>
@@ -106,10 +132,11 @@
                     
                 </p>
             </div>
-            <div id="mobiusIconContactContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconContact">
+            <div class="mobiusIconContainer">
+                <img src="library/mobiusIcon.svg" class="mobiusIconContact">
             </div>
         </section>
+    <script src="./js/script.js"> </script>
     </body>
 </html>
 

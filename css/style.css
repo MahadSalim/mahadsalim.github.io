@@ -1,13 +1,56 @@
-html{
+html, body{
     margin: 0;
     padding: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+
+    /* hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+/* hide scrollbar */
+body::-webkit-scrollbar {
+    display: none;           
 }
 
-body{
+.mobiusIconContainer{
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%); */
+
+    height: 100%;
+    width: 100%;
+}
+
+.mobiusIconLanding{
+    height: 120%;
+    width: auto;
+    
+}
+
+.mobiusIconAbout{
+    height: 120%;
+    width: auto;
+    
+}
+
+.mobiusIconWork{
+    height: 120%;
+    width: auto;
+    
+}
+
+.mobiusIconContact{
+    height: 120%;
+    width: auto;
+    
 }
 
 a:link {
@@ -28,6 +71,20 @@ a:hover {
 a:active {
     color: #5A5A5A;
     text-decoration: none;
+}
+
+@font-face {
+    font-family: 'victorMono';
+    src: url(../library/fonts/WOFF2/VictorMono-Thin.woff2) format(WOFF2);
+    src: url(../library/fonts/WOFF/VictorMono-Thin.woff) format(WOFF);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'victorMono';
+    src: url(../library/fonts/WOFF2/VictorMono-ExtraLight.woff2) format(WOFF2);
+    src: url(../library/fonts/WOFF/VictorMono-ExtraLight.woff) format(WOFF);
+    font-weight: 200;
 }
 
 @font-face {
