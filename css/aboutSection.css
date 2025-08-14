@@ -1,0 +1,151 @@
+#aboutSection{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    height: 100vh;
+    width: auto;
+
+    box-sizing: border-box;
+
+    border: 2px dashed black;
+}
+
+/*  */
+
+#mobiusIconAboutContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+}
+
+#mobiusIconAbout{
+    height: 120%;
+    width: auto;
+}
+
+/*  */
+
+#aboutSectionTitleContainer{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin-top: -50vh;
+    margin-left: -62vw;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    gap: 12vw;
+
+}
+
+#aboutSectionTitle{
+    font-family: victorMono;
+    font-weight: 400;
+    font-size: 8.75vw;
+
+    letter-spacing: 1.75vw;
+    margin-right: -1.75vw;
+
+    color: #5A5A5A;
+}
+
+/*  */
+
+#aboutSectionSubTitleContainer{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin-top: 0vh;
+    margin-left: -62vw;
+    max-width: 31vw;
+    min-width: 31vw;
+    min-height: 27vh;
+    min-height: 27vh;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0;
+
+    border: 1px solid #5A5A5A;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#aboutSectionSubTitle{
+    font-family: victorMono;
+    font-weight: 300;
+    font-size: 1.75vw;
+
+    color: #5A5A5A;
+}
+
+#aboutSectionSubTitle:not(:last-child) {
+    margin-bottom: 1vh;
+}
+
+/*  */
+
+#aboutSectionParaContainer{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin-top: 0vh;
+    margin-left: 62vw;
+    max-width: 31vw;
+    min-width: 31vw;
+    min-height: 55vh;
+    max-height: 55vh;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 0;
+
+    border: 1px solid #5A5A5A;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#aboutSectionPara{
+    text-align: center;
+    font-family: victorMono;
+    font-weight: 400;
+    font-size: 1.4vw;
+    color: #5A5A5A;
+}
+
+#aboutSectionPara:not(:last-child) {
+    margin-bottom: 1vh;
+}
+
+/*  */
+
+#aboutSectionNavBarContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-bottom: -60vh;
+    gap: 2.5vh;
+
+    text-align: center;
+    font-family: victorMono;
+    font-weight: 500;
+    font-size: 1.25vw;
+    text-decoration: none;
+    letter-spacing: 0.25vw;
+    
+}

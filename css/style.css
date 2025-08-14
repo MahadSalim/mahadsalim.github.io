@@ -9,3 +9,44 @@ body{
     margin: 0;
     padding: 0;
 }
+
+a:link {
+    color: #5A5A5A;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5A5A5A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5A5A5A;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #5A5A5A;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'victorMono';
+    src: url(../library/fonts/WOFF2/VictorMono-Light.woff2) format(WOFF2);
+    src: url(../library/fonts/WOFF/VictorMono-Light.woff) format(WOFF);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'victorMono';
+    src: url(../library/fonts/WOFF2/VictorMono-Regular.woff2) format(WOFF2);
+    src: url(../library/fonts/WOFF/VictorMono-Regular.woff) format(WOFF);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'victorMono';
+    src: url(../library/fonts/WOFF2/VictorMono-Medium.woff2) format(WOFF2);
+    src: url(../library/fonts/WOFF/VictorMono-Medium.woff) format(WOFF);
+    font-weight: 500;
+}
