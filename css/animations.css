@@ -29,3 +29,13 @@
     animation-name: fade-in-scale-in;
     animation-duration: 1s;
 }
+
+@keyframes loadingAnimation{
+    0% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

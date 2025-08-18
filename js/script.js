@@ -1,3 +1,13 @@
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    setTimeout(function() {
+        loadingScreen.style.display = 'none';
+        mainContent.style.display = 'block';
+    }, 6290); 
+});
+
 const sections = document.querySelectorAll('section');
 const icons = document.querySelectorAll('.mobiusIconContainer img');
 let lastActiveIndex = 0; // Start with the first section

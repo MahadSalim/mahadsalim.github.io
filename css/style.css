@@ -31,8 +31,7 @@ body::-webkit-scrollbar {
 
 #mobiusIconLanding{
     height: 45%;
-    width: auto;
-    
+    width: auto;    
 }
 
 #mobiusIconAbout{
@@ -51,6 +50,28 @@ body::-webkit-scrollbar {
     height: 45%;
     width: auto;
     
+}
+
+#loadingScreen{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    height: 100vh;
+    width: auto;
+}
+
+.line {
+    fill: none;
+    stroke: #5a5a5a;
+    stroke-width: 1.04px;
+    animation-name: loadingAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: calc(var(--i) * .1s);
 }
 
 a:link {

@@ -69,7 +69,9 @@
 #contactSectionSubTitle{
     font-family: victorMono;
     font-weight: 300;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
+    text-align: center;
+    max-width: 85%;
 
     color: #5A5A5A;
 }
@@ -88,7 +90,7 @@
     margin-left: 62vw;
     max-width: 31vw;
     min-width: 31vw;
-    min-height: 55vh;
+    min-height: 50vh;
     max-height: 55vh;
     justify-content: center;
     align-items: center;
@@ -100,6 +102,8 @@
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+
+    z-index: 10;
 }
 
 #contactSectionPara{
@@ -110,8 +114,16 @@
     color: #5A5A5A;
 }
 
-#contactSectionPara:not(:last-child) {
-    margin-bottom: 1vh;
+#contactSectionSubPara{
+    text-align: center;
+    font-family: victorMono;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #5A5A5A;
+}
+
+#contactSectionSubPara {
+    margin-bottom: 5vh;
 }
 
 /*  */

@@ -9,142 +9,213 @@
         <link rel = "stylesheet" href ="css/workSection.css">
         <link rel = "stylesheet" href ="css/contactSection.css">
         <link rel = "stylesheet" href ="css/animations.css">
+        <style>
+            #mainContent {
+                display: none;
+            }
+        </style>
     </head>
     <body>
-        <section id="landingSection" data-index="0">
-            <div id="landingSectionTitleContainer">
-                <h1 id="landingSectionTitle">
-                    MAHAD
-                </h1>
-                <h1 id="landingSectionTitle">
-                    SALIM
-                </h1>
-            </div>
-            <div id="landingSectionNavBarContainer">
-                <a href="#aboutSection">ABOUT</a>
-                <a href="#workSection">WORK</a>
-                <a href="#contactSection">CONTACT</a>
-            </div>
-            <div class="mobiusIconContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconLanding">
-            </div>
-        </section>
-
-        <section id="aboutSection" data-index="1">
-            <div id="aboutSectionTitleContainer">
-                <h1 id="aboutSectionTitle">
-                    ABOUT
-                </h1>
-            </div>
-            <div id="aboutSectionSubTitleContainer">
-                    <h2 id="aboutSectionSubTitle">
-                        Artificial Intelligence Engineer
-                    </h2>
-                    <h2 id="aboutSectionSubTitle">
-                        Machine Learning Engineer
-                    </h2>
-                    <h2 id="aboutSectionSubTitle">
-                        Data Analyst
-                    </h2>
-            </div>
-            <div id="aboutSectionParaContainer">
-                <p id="aboutSectionPara">
-                    HI!
-                </p>
-                <p id="aboutSectionPara">
-                    I come from a background in Computer Science and am interested in using AI for real world applications whether it be by coding or by designing.
-                </p>
-                <p id="aboutSectionPara">
-                    I specialize in Python and SQL and other boring languages which I don't tend to pay attention to. So hit me up if you want to learn how to code or just need someone to hang out with. IM free 24/7
-                </p>
-            </div>
-            <div id="aboutSectionNavBarContainer">
-                <a href="#workSection">WORK</a>
-                <a href="#contactSection">CONTACT</a>
-            </div>
-            <div class="mobiusIconContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconAbout">
-            </div>
-        </section>
-
-        <section id="workSection" data-index="2">
-            <div id="workSectionTitleContainer">
-                <h1 id="workSectionTitle">
-                    WORK
-                </h1>
-            </div>
-            <div id="workSectionSubTitleContainer">
-                    <h2 id="workSectionSubTitle">
-                        
-                    </h2>
-            </div>
-            <div id="workSectionParaContainer">
-                <div class="work-entry">
-                    <div>
-                        <p class="job-title">Machine Learning / Data Engineer</p>
-                        <p class="company-name">Cliffton Technical Services</p>
-                    </div>
-                    <p class="job-dates">2024 - 2025</p>
+        <div class="loadingScreen" id="loadingScreen">
+            <svg width="30%" height="auto" viewBox="0 0 1167 1198" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line" style="--i:54" d="M569.174 453.835L467.537 375.313L549.628 127"/>
+                <path class="line" style="--i:53" d="M504.078 132.438L434.223 375.143L557.446 457.065"/>
+                <path class="line" style="--i:52" d="M543.338 459.274L400.23 376.333L457.677 143.316"/>
+                <path class="line" style="--i:51" d="M411.619 157.083L370.148 381.602L528.042 463.863"/>
+                <path class="line" style="--i:50" d="M515.329 471.069L339.045 391.12L371.338 175.439"/>
+                <path class="line" style="--i:49" d="M329.885 199.595L309.127 403.618L500.972 479.445"/>
+                <path class="line" style="--i:48" d="M488.062 491.386L281.324 420.012L292.9 225.81"/>
+                <path class="line" style="--i:47" d="M259.175 252.019L255.334 438.568L474.074 505.905"/>
+                <path class="line" style="--i:46" d="M458.083 530.065L228.9 462.581L230.494 283.355"/>
+                <path class="line" style="--i:45" d="M202.195 318.263L206.327 485.981L448.257 548.92"/>
+                <path class="line" style="--i:44" d="M440.473 567.55L185.667 511.802L177.781 357.613"/>
+                <path class="line" style="--i:43" d="M157.189 396.118L167.599 543.772L434.439 588.812L442.724 583.925"/>
+                <path class="line" style="--i:42" d="M442.724 604.958L427.428 618.555L149.541 585.412L138.918 435.846"/>
+                <path class="line" style="--i:41" d="M123.197 490.446L138.918 631.727L422.541 647.661L442.724 626.203"/>
+                <path class="line" style="--i:40" d="M446.762 639.163L421.905 682.291L133.395 680.166L113 554.819"/>
+                <path class="line" style="--i:39" d="M451.222 652.547L422.117 714.796L138.918 727.33"/>
+                <path class="line" style="--i:38" d="M149.541 775.345L428.278 746.026L456.109 664.445"/>
+                <path class="line" style="--i:37" d="M460.996 673.792L438.476 781.081L167.6 818.26"/>
+                <path class="line" style="--i:36" d="M193.73 863.725L449.947 810.187L468.218 682.291"/>
+                <path class="line" style="--i:35" d="M475.017 691.426L465.457 836.743L221.137 900.691"/>
+                <path class="line" style="--i:34" d="M253.855 934.684L485.002 866.274L484.577 701.836"/>
+                <path class="line" style="--i:33" d="M495.094 712.671L504.548 890.069L289.547 966.551"/>
+                <path class="line" style="--i:32" d="M325.24 992.895L528.981 913.013L509.01 720.107"/>
+                <path class="line" style="--i:31" d="M523.881 728.605L554.049 931.497L366.879 1016.9"/>
+                <path class="line" style="--i:30" d="M407.457 1035.6L582.73 948.28L543.214 735.404"/>
+                <path class="line" style="--i:29" d="M566.466 740.741L610.986 962.302L446.973 1050.06"/>
+                <path class="line" style="--i:28" d="M588.897 740.882L642.747 973.535L487.939 1061.13"/>
+                <path class="line" style="--i:27" d="M532.438 1068.3L675.854 980.812L607.323 739.635"/>
+                <path class="line" style="--i:26" d="M628.671 736.717L708.007 984.774L579.484 1070.16"/>
+                <path class="line" style="--i:25" d="M622.561 1068.3L744.486 985.25L650.526 731.165L643.911 728.448"/>
+                <path class="line" style="--i:24" d="M662.152 718.437L679.974 723.974L790.896 979.754L666.191 1063.65"/>
+                <path class="line" style="--i:23" d="M721.451 1050.87L836.703 966.379L709.65 712.554L678.504 706.152"/>
+                <path class="line" style="--i:22" d="M688.461 696.342L738.099 697.964L880.912 945.555L781.414 1027.48"/>
+                <path class="line" style="--i:21" d="M699.898 686.027L765.973 678.599L919.083 915.305"/>
+                <path class="line" style="--i:20" d="M706.537 676.089L791.428 658.165L952.217 883.242"/>
+                <path class="line" style="--i:19" d="M712.783 666.711L815.358 632.976L984.178 844.785"/>
+                <path class="line" style="--i:18" d="M716.473 656.642L834.548 604.477C834.548 604.477 960.291 744.27 1008.02 800.224"/>
+                <path class="line" style="--i:17" d="M721.451 643.105L851.262 579.776L1028.84 758.65"/>
+                <path class="line" style="--i:16" d="M724.639 630.71L866.626 548.586L1039.04 713.905"/>
+                <path class="line" style="--i:15" d="M729.668 615.862L878.049 518.444L1048.42 667.089"/>
+                <path class="line" style="--i:14" d="M729.668 600.002L882.797 489.412L1055.48 623.814"/>
+                <path class="line" style="--i:13" d="M726.414 582.747L888.093 455.151L1055.48 576.004"/>
+                <path class="line" style="--i:12" d="M726.414 565.838L888.319 422.102L1049.77 529.947"/>
+                <path class="line" style="--i:11" d="M720.709 547.165L886.688 392.598L1044.89 488.554"/>
+                <path class="line" style="--i:10" d="M710.639 528.081L878.974 358.788L1032.32 448.979"/>
+                <path class="line" style="--i:9" d="M1016.67 406.944L869.481 326.928L699.656 509.493"/>
+                <path class="line" style="--i:8" d="M683.885 491.49L857.15 296.191L994.809 365.122"/>
+                <path class="line" style="--i:7" d="M972.569 328.942L838.984 265.277L666.014 476.093"/>
+                <path class="line" style="--i:6" d="M647.016 465.595L645.127 451.532L812.992 229.466L946.106 293.137"/>
+                <path class="line" style="--i:5" d="M906.898 251.78L778.747 196.712L620.854 432.109L630.541 461.172"/>
+                <path class="line" style="--i:4" d="M616.721 457.065L594.014 414.539L735.607 166.461L857.149 212.166"/>
+                <path class="line" style="--i:3" d="M693.756 146.545L563.225 398.938L603.2 455.705"/>
+                <path class="line" style="--i:2" d="M591.778 453.835L531.951 387.38L647.015 132.438"/>
+                <path class="line" style="--i:1" d="M600.105 127L499.318 380.072L579.2 453.835"/>
+            </svg>
+        </div>
+        <div id="mainContent">
+            <section id="landingSection" data-index="0">
+                <div id="landingSectionTitleContainer">
+                    <h1 id="landingSectionTitle">
+                        MAHAD
+                    </h1>
+                    <h1 id="landingSectionTitle">
+                        SALIM
+                    </h1>
                 </div>
-                <div class="work-entry">
-                    <div>
-                        <p class="job-title">Python Developer</p>
-                        <p class="company-name">7G-Fuse</p>
-                    </div>
-                    <p class="job-dates">2023 - 2024</p>
+                <div id="landingSectionNavBarContainer">
+                    <a href="#aboutSection">ABOUT</a>
+                    <a href="#workSection">WORK</a>
+                    <a href="#contactSection">CONTACT</a>
                 </div>
-                <div class="work-entry">
-                    <div>
-                        <p class="job-title">AI and ML R&D Intern</p>
-                        <p class="company-name">University of Nottingham</p>
-                    </div>
-                    <p class="job-dates">2023 - 2023</p>
+                <div class="mobiusIconContainer">
+                    <img src="library/mobiusIcon.svg" id="mobiusIconLanding">
                 </div>
-                <div class="work-entry">
-                    <div>
-                        <p class="job-title">Software Engineer Intern</p>
-                        <p class="company-name">Mesinkira.io</p>
-                    </div>
-                    <p class="job-dates">2022 - 2022</p>
+            </section>
+    
+            <section id="aboutSection" data-index="1">
+                <div id="aboutSectionTitleContainer">
+                    <h1 id="aboutSectionTitle">
+                        ABOUT
+                    </h1>
                 </div>
-            </div>
-            <div id="workSectionNavBarContainer">
-                <a href="#contactSection">CONTACT</a>
-            </div>
-            <div class="mobiusIconContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconWork">
-            </div>
-        </section>
-
-        <section id="contactSection" data-index="3">
-            <div id="contactSectionTitleContainer">
-                <h1 id="contactSectionTitle">
-                    CONTACT
-                </h1>
-            </div>
-            <div id="contactSectionSubTitleContainer">
-                    <h2 id="contactSectionSubTitle">
-                        
-                    </h2>
-            </div>
-            <div id="contactSectionParaContainer">
-                <p id="contactSectionPara">
-                    Email:
-                </p>
-                <p2 id="contactSectionSubPara">
-                    mahadsalim01@gmail.com
-                </p2>
-                <p id="contactSectionPara">
-                    Github:
-                </p>
-                <p2 id="contactSectionSubPara">
-                    github.com/MahadSalim
-                </p2>
-            </div>
-            <div class="mobiusIconContainer">
-                <img src="library/mobiusIcon.svg" id="mobiusIconContact">
-            </div>
-        </section>
+                <div id="aboutSectionSubTitleContainer">
+                        <h2 id="aboutSectionSubTitle">
+                            Artificial Intelligence Engineer
+                        </h2>
+                        <h2 id="aboutSectionSubTitle">
+                            Machine Learning Engineer
+                        </h2>
+                        <h2 id="aboutSectionSubTitle">
+                            Data Analyst
+                        </h2>
+                </div>
+                <div id="aboutSectionParaContainer">
+                    <p id="aboutSectionPara">
+                        HI, I’m Mahad!
+                    </p>
+                    <p id="aboutSectionPara">
+                        With a background in Computer Science I specialize in AI-driven solutions.
+                    </p>
+                    <p id="aboutSectionPara">
+                        Combining data, code, and design to build smarter, usable systems.
+                    </p>
+                </div>
+                <div id="aboutSectionNavBarContainer">
+                    <a href="#workSection">WORK</a>
+                    <a href="#contactSection">CONTACT</a>
+                </div>
+                <div class="mobiusIconContainer">
+                    <img src="library/mobiusIcon.svg" id="mobiusIconAbout">
+                </div>
+            </section>
+    
+            <section id="workSection" data-index="2">
+                <div id="workSectionTitleContainer">
+                    <h1 id="workSectionTitle">
+                        WORK
+                    </h1>
+                </div>
+                <div id="workSectionSubTitleContainer">
+                        <h2 id="workSectionSubTitle">
+                            Check out my latest projects:
+                        </h2>
+                </div>
+                <div id="workSectionParaContainer">
+                    <div class="work-entry">
+                        <div>
+                            <p class="job-title">Machine Learning / Data Engineer</p>
+                            <p class="company-name">Cliffton Technical Services</p>
+                        </div>
+                        <p class="job-dates">2024 - 2025</p>
+                    </div>
+                    <div class="work-entry">
+                        <div>
+                            <p class="job-title">Python Developer</p>
+                            <p class="company-name">7G-Fuse</p>
+                        </div>
+                        <p class="job-dates">2023 - 2024</p>
+                    </div>
+                    <div class="work-entry">
+                        <div>
+                            <p class="job-title">AI and ML R&D Intern</p>
+                            <p class="company-name">University of Nottingham</p>
+                        </div>
+                        <p class="job-dates">2023 - 2023</p>
+                    </div>
+                    <div class="work-entry">
+                        <div>
+                            <p class="job-title">Software Engineer Intern</p>
+                            <p class="company-name">Mesinkira.io</p>
+                        </div>
+                        <p class="job-dates">2022 - 2022</p>
+                    </div>
+                </div>
+                <div id="workSectionNavBarContainer">
+                    <a href="#contactSection">CONTACT</a>
+                </div>
+                <div class="mobiusIconContainer">
+                    <img src="library/mobiusIcon.svg" id="mobiusIconWork">
+                </div>
+            </section>
+    
+            <section id="contactSection" data-index="3">
+                <div id="contactSectionTitleContainer">
+                    <h1 id="contactSectionTitle">
+                        CONTACT
+                    </h1>
+                </div>
+                <div id="contactSectionSubTitleContainer">
+                        <h2 id="contactSectionSubTitle">
+                            Feel free to reach me at my email for any questions or check out my github for my latest projects
+                        </h2>
+                </div>
+                <div id="contactSectionParaContainer">
+                    <p id="contactSectionPara">
+                        Email:
+                    </p>
+                    <p2 id="contactSectionSubPara">
+                        mahadsalim01@gmail.com
+                    </p2>
+                    <p id="contactSectionPara">
+                        Github:
+                    </p>
+                    <p2 id="contactSectionSubPara">
+                        github.com/MahadSalim
+                    </p2>
+                    <p id="contactSectionPara">
+                        LinkedIn:
+                    </p>
+                    <p2 id="contactSectionSubPara">
+                        linkedin.com/mahad-salim
+                    </p2>
+                </div>
+                <div class="mobiusIconContainer">
+                    <img src="library/mobiusIcon.svg" id="mobiusIconContact">
+                </div>
+            </section>
+        </div>
     <script src="./js/script.js"> </script>
     </body>
 </html>

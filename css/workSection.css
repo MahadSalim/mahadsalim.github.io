@@ -67,7 +67,7 @@
 #workSectionSubTitle{
     font-family: victorMono;
     font-weight: 300;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
 
     color: #5A5A5A;
 }
@@ -99,6 +99,8 @@
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+
+    z-index: 10;
 }
 
 .work-entry {

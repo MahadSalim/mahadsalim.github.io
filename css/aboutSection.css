@@ -50,10 +50,10 @@
     position:absolute;
     margin-top: 0vh;
     margin-left: -62vw;
-    max-width: 31vw;
     min-width: 31vw;
+    max-width: 31vw;
     min-height: 27vh;
-    min-height: 27vh;
+    max-height: 27vh;
     justify-content: center;
     align-items: center;
 
@@ -69,7 +69,7 @@
 #aboutSectionSubTitle{
     font-family: victorMono;
     font-weight: 300;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
 
     color: #5A5A5A;
 }
@@ -88,7 +88,7 @@
     margin-left: 62vw;
     max-width: 31vw;
     min-width: 31vw;
-    min-height: 55vh;
+    min-height: 35vh;
     max-height: 55vh;
 
     justify-content: center;
@@ -101,6 +101,8 @@
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+
+    z-index: 10;
 }
 
 #aboutSectionPara{
