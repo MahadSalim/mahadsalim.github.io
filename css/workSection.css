@@ -11,13 +11,7 @@
 
     box-sizing: border-box;
 
-    border: 2px dashed black;
-
     scroll-snap-align: start;
-
-    scroll-snap-align: start;
-
-
 }
 
 /*  */
@@ -33,7 +27,6 @@
 
     text-align: center;
     gap: 12vw;
-
 }
 
 #workSectionTitle{
@@ -159,5 +152,6 @@
     font-size: 1.25vw;
     text-decoration: none;
     letter-spacing: 0.25vw;
-    
+
+    z-index: 10;
 }

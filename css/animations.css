@@ -7,3 +7,25 @@
     transition: transform 2s;
     transform: rotate(-360deg);
 }
+
+@keyframes fade-in-scale-in{
+    0%{
+        transform: scale(0%);
+        opacity: 0;
+    }
+
+    50%{
+        transform: scale(90%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fade-in-scale-in;
+    animation-duration: 1s;
+}

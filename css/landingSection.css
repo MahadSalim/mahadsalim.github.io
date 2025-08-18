@@ -11,8 +11,6 @@
 
     box-sizing: border-box;
 
-    border: 2px dashed black;
-
     scroll-snap-align: start;
 }
 
@@ -58,4 +56,5 @@
     text-decoration: none;
     letter-spacing: 0.25vw;
     
+    z-index: 10;
 }

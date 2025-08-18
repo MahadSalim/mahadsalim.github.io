@@ -4,7 +4,21 @@ let lastActiveIndex = 0; // Start with the first section
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+
+        const contentToAnimate = entry.target.querySelectorAll(`
+            #landingSectionTitleContainer, #landingSectionNavBarContainer,
+            #aboutSectionTitleContainer, #aboutSectionSubTitleContainer, #aboutSectionParaContainer, #aboutSectionNavBarContainer,
+            #workSectionTitleContainer, #workSectionSubTitleContainer, #workSectionParaContainer, #workSectionNavBarContainer,
+            #contactSectionTitleContainer, #contactSectionSubTitleContainer, #contactSectionParaContainer
+
+        `);
+
         if (entry.isIntersecting) {
+
+            if (contentToAnimate.forEach(el =>{
+                el.classList.add("fade-in");
+            }));
+            
             const sectionId = entry.target.id;
             const icon = document.querySelector(`#${sectionId} .mobiusIconContainer img`);
 
@@ -26,6 +40,11 @@ const observer = new IntersectionObserver((entries) => {
             }
 
             lastActiveIndex = currentSectionIndex;
+        } else {
+            // Remove the class when it's out of view to reset the animation
+            if (contentToAnimate.forEach(el =>{
+                el.classList.remove("fade-in");
+            }));
         }
     });
 }, { threshold: 0.5 });
@@ -33,3 +52,4 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
